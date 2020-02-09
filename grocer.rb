@@ -56,8 +56,12 @@ return consolidation
 end
 
 def apply_coupons(cart, coupons)
-  coupon_array = []
-  for a in coupons
+  counter = 0 
+  while counter < coupons.length 
+  
+  cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
+  couponed_item_name = "#(coupons)"
+  counter += 1 
   
   
   # Consult README for inputs and outputs
@@ -66,6 +70,8 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
+  
+  
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart

@@ -65,14 +65,10 @@ def apply_coupons(cart, coupons)
   if cart_item && cart_item[:count] >= coupons[counter][:num]
     if cart_item_with_coupon 
       cart_item_with_coupon
+      end
     end
   counter += 1 
 end
-  
-  
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
 end
 
 def apply_clearance(cart)

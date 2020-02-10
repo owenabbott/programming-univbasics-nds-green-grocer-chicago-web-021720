@@ -90,7 +90,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  pp coupons
+#  pp coupons
   # Consult README for inputs and outputs
   #
   # This method should call

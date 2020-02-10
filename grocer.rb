@@ -97,6 +97,8 @@ cart
 end
 
 def checkout(cart, coupons)
+  
+  
 #  pp coupons
   # Consult README for inputs and outputs
   #
